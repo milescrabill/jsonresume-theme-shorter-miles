@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-boilerplate",
-  "version": "0.1.2",
-  "description": "Boilerplate theme for JSON Resume",
-  "author": "Mattias Erming",
+  "name": "jsonresume-theme-shorter-miles",
+  "version": "0.1",
+  "description": "Modified shorter-bill",
+  "author": "Miles Crabill",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erming/jsonresume-theme-boilerplate"
+    "url": "https://github.com/milescrabill/jsonresume-theme-shorter-miles"
   },
   "license": "MIT",
   "dependencies": {

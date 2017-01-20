@@ -1,25 +1,23 @@
 var fs = require("fs");
-var path = require('path');
 var Handlebars = require("handlebars");
+var moment = require('moment');
 
 function render(resume) {
 	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
-	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
-	var partialsDir = path.join(__dirname, 'partials');
-	var filenames = fs.readdirSync(partialsDir);
+	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
 
-	filenames.forEach(function (filename) {
-	  var matches = /^([^.]+).hbs$/.exec(filename);
-	  if (!matches) {
-	    return;
-	  }
-	  var name = matches[1];
-	  var filepath = path.join(partialsDir, filename)
-	  var template = fs.readFileSync(filepath, 'utf8');
+	var short_date = 'MMM YYYY';
+	var medium_date = 'MMM DD, YYYY';
 
-	  Handlebars.registerPartial(name, template);
+	Handlebars.registerHelper('date', function(date) {
+		return moment(date).format(short_date);
 	});
-	return Handlebars.compile(tpl)({
+
+	Handlebars.registerHelper('medium_date', function(date) {
+		return moment(date).format(medium_date);
+	});
+
+	return Handlebars.compile(template)({
 		css: css,
 		resume: resume
 	});
