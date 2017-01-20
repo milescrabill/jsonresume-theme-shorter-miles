@@ -1,3 +1,6 @@
+## Note:
+Ripped off from [shorter-bill](https://github.com/Billiam/jsonresume-theme-shorter-bill/). Copy-pasted (ruining git history) out of laziness, not malice.
+
 # Boilerplate theme [![](https://badge.fury.io/js/jsonresume-theme-boilerplate.svg)](https://www.npmjs.org/package/jsonresume-theme-boilerplate)
 
 This is the boilerplate theme for [JSON Resume](http://jsonresume.org/).
