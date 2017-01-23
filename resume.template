@@ -316,15 +316,12 @@
 			{{#if name}}
 			<header>
 				<h3 class="name">
-				{{#if website}}
-				<a href="{{website}}">
-				{{/if}}
 					{{name}}
-				{{#if website}}
-				</a >
-				{{/if}}
 				</h3>
 			</header>
+			{{/if}}
+			{{#if website}}
+			<a href="{{website}}">{{website}}</a>
 			{{/if}}
 			{{#if publisher}}
 			<div class="publisher">
