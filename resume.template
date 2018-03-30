@@ -105,10 +105,6 @@
 			<header>
 				{{#if company}}
 					<h3 class="name">{{company}}</h3>
-
-					{{#if website}}
-						<h4 class="url"><a href="{{website}}">{{website}}</a></h4>
-					{{/if}}
 				{{/if}}
 			</header>
 			{{#if position}}
