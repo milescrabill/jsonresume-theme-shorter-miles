@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-shorter-miles",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Modified shorter-bill",
   "author": "Miles Crabill",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4",
-    "moment": "^2.17.1"
+    "handlebars": "^4",
+    "moment": "^2"
   }
 }
